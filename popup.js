@@ -1,0 +1,11 @@
+var getSelectedTab = (tabs) => {
+  var tab = tabs[0]; // Assuming you want the first tab in the list
+  var tabId = tab.id;
+
+  var sendMessage = (messageObj) => chrome.tabs.sendMessage(tabId, messageObj);
+
+  document.getElementById('rotate').addEventListener('click', () => sendMessage({ action: 'ROTATE' }));
+  document.getElementById('reset').addEventListener('click', () => sendMessage({ action: 'RESET' }));
+}
+
+chrome.tabs.query({ active: true, currentWindow: true }, getSelectedTab);
