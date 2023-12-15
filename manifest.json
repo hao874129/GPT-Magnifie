@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GPT 放大器",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",

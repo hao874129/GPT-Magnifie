@@ -4,7 +4,7 @@ var getSelectedTab = (tabs) => {
 
   var sendMessage = (messageObj) => chrome.tabs.sendMessage(tabId, messageObj);
 
-  document.getElementById('rotate').addEventListener('click', () => sendMessage({ action: 'ROTATE' }));
+  document.getElementById('enlarge ').addEventListener('click', () => sendMessage({ action: 'ENLARGE' }));
   document.getElementById('reset').addEventListener('click', () => sendMessage({ action: 'RESET' }));
 }
 
